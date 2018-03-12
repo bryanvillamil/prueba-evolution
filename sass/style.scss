@@ -96,6 +96,22 @@ header {
     &__team {
         background: $color-3;
     }
+    // stat
+    &__statistics {
+        background: $color-4;
+    }
+    // portafolio
+    &__portafolio {
+        background: $color-5;
+    }
+    // team
+    &__comment {
+       background: $color-6;
+    }
+    // team
+    &__team {
+        //background: $color-7;
+    }
 }
 
 
@@ -166,8 +182,7 @@ header {
     }
 }
 
-
-// Services
+// Team
 .team {
     padding: 5rem 0 10rem;
     &__text {
@@ -208,6 +223,7 @@ header {
             flex: 1;
             display: flex;
             justify-content: center;
+            flex-direction: column;
             &__text {
                 display: flex;
                 align-items: flex-start;
@@ -235,6 +251,165 @@ header {
                         color: #3E475F;
                         text-align: center;
                     }
+                }
+            }
+            &__social {
+                padding-top: 1.5rem;
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    padding: 0;
+                    li {
+                        margin: 0 .5rem;
+                        list-style: none;
+                        a {
+                            display: inline-block;
+                            background: darken($color-3, 12%);
+                            padding: .6rem;
+                            border-radius: 50%;
+                            transition: all .5s;
+                            &.faceboook {
+                                padding: .6rem 1.1rem;
+                            }
+                            &:hover {
+                                svg {
+                                    transform: scale(1.1);
+                                }
+                            }
+                            svg {
+                                color: $white;
+                                font-size: 18px;
+                                transition: all .5s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Statistics
+.stat {
+    padding: 5rem 0 10rem;
+    &__text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &--title {
+            color: #3E475F;
+            position: relative;
+            text-align: center;
+            margin: 3rem 0;
+            text-transform: uppercase;
+            &:after {
+                content: '';
+                display: inline-block;
+                background: rgba(0,0,0, .3);
+                height: .3rem;
+                width: 8%;
+                position: absolute;
+                bottom: -1rem;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+            }
+        }
+        &--des {
+            color: #3E475F;
+            text-align: center;
+            padding-bottom: 6rem;
+        }
+    }
+}
+
+
+// Portafolio
+.portafolio {
+    padding: 5rem 0 10rem;
+    &__text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &--title {
+            color: #3E475F;
+            position: relative;
+            text-align: center;
+            margin: 3rem 0;
+            text-transform: uppercase;
+            &:after {
+                content: '';
+                display: inline-block;
+                background: rgba(0,0,0, .3);
+                height: .3rem;
+                width: 8%;
+                position: absolute;
+                bottom: -1rem;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+            }
+        }
+        &--des {
+            color: #3E475F;
+            text-align: center;
+            padding-bottom: 6rem;
+        }
+    }
+
+    &__cajas {
+        .nav {
+            justify-content: center;
+            li {
+                margin: 0 .8rem;
+                background: rgba(0,0,0,.1);
+                padding: .6rem 2.2rem;
+                border-radius: 2px;
+                transition: all .5s;
+                cursor: pointer;
+                &:hover, &.active {
+                    background: $white;
+                }
+                a {
+                    padding: 0;
+                    color: #3E475F;
+                    text-transform: uppercase;
+                    display: inline-block;
+                }
+            }
+        }
+        .portafolio__box {
+            margin-top: 8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            .box {
+                width: 40%;
+                display: flex;
+                justify-content: center;
+                padding-bottom: 5rem;
+                &__title {
+                    h4 {
+                        color: #3E475F;
+                    }
+                }
+            }
+        }
+        .portafolio__link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+                background: #5EBFA5;
+                transition: all .5s;
+                color: $white;
+                padding: 1.4rem 2.5rem;
+                text-transform: uppercase;
+                box-shadow: 0px 2.5px 0px darken(#5EBFA5, 20%);
+                &:hover {
+                    background: darken(#5EBFA5, 8%);
                 }
             }
         }
