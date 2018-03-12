@@ -1,0 +1,19 @@
+{
+  "name": "plantilla",
+  "version": "0.0.1",
+  "description": "plantilla de compilacion SASS JS",
+  "autor": "Bryan Villamil",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^8.1.0",
+    "grunt": "~0.4.5",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.9.0"
+  },
+  "dependencies": {
+    "bourbon": "^5.0.0"
+  }
+}
