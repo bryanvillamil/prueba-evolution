@@ -1,21 +1,10 @@
-# Plantilla Grunt
-##### compilar Archivos sass y JS
+# Prueba Evolution
+##### Pasos
 
-revisamos que tengamos instalado todo lo necesario:
--Ruby (para compilar sass, ya que este esta bajo ruby), en la terminal agregamos esta linea para verificar si hay ruby instalado: [ruby -v](https://sass-lang.com/install).
 
--[NodeJS](http://nodejs.org/es/ "NodeJS").
+- Descargar proyecto de github
 
--[NPM](http://www.npmjs.com/ "NPM")
+- abrir archivo index.html en un navegador y listo
 
-y ya solo tenemos que instalar las depedencias de NPM
-- npm install
 
-Para correr proyecto local le damos:
-- grunt
-
-## License
-
-The code is open source.
-
-######Bryan Villamil Acevedo
+##### Bryan Villamil Acevedo
