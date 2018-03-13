@@ -67,6 +67,7 @@ navButton.on("click", function(e) {
         slideTween = TweenMax.to(panel, .5, {x: 375, ease: Power3.easeOut});
         TweenMax.to(navButton, .5, {x: 315, ease: Power3.easeOut});
         state = "closed";
+        $('body').removeClass('open');
     } else if(state === "closed") {
         navButton.mouseout();
         navButton.off("mouseover");
@@ -78,5 +79,7 @@ navButton.on("click", function(e) {
         TweenMax.to(navButton, .5, {x: 75, ease: Power3.easeOut});
         hoverTL.reverse();
         state = "open";
+        $('body').addClass('open');
     }
 });
+

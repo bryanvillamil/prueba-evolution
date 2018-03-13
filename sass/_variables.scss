@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900');
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
+
+
 // Variables
 
 $color-primario: #f8f8f8;
@@ -10,27 +15,39 @@ $color-3: #E9F1F7;
 $color-4: $white;
 $color-5: #F9DEA1;
 $color-6: #C5517F;
-$color-7: $white;
+$color-7: #415494;
 
 
+// Font
+$font-principal: 'Titillium Web', sans-serif;
+$font-secun: 'PT Serif', serif;
 
-.btn-primary {
-    background: #DB8256;
-    border-color: #DB8256;
-}
+
+// Media Querys
+$screen_xl: 1200px;
+$screen_lg: 1024px;
+$screen_md: 768px;
+$screen_sm: 568px;
+$screen_xs: 420px;
+
+
+// botones
 .btn {
     padding: 1.2rem 1.5rem;
     font-size: 1.5rem;
 }
-
-
-
-// Media Querys
-//
-$screen_lg: 1200px;
-$screen_lg: 991px;
-$screen_md: 768px;
-$screen_sm: 568px;
-$screen_xs: 400px;
-
-// @media (min-width: $screen_lg)
+.btn-primary {
+    font-family: $font-principal;
+    text-transform: uppercase;
+    padding: 1.6rem 5.5rem;
+    letter-spacing: .8px;
+    font-size: 1.6rem;
+    transition: all .5s;
+    border-radius: 2px;
+    &:hover {
+        transform: scale(1.1);
+    }
+    @media (max-width: $screen_xs) {
+        padding: 1.3rem 4.5rem;
+    }
+}
